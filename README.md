@@ -1,2 +1,4 @@
 # ProyectosModelo
-Collección de modelo de proyectos 
+Collección de plantillas de modelo de proyectos 
+
+
