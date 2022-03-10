@@ -15,4 +15,8 @@ Proyecto 03 - Hola Mundo Maven
 Proyecto 04 - maven-springboot
 	Es un proyecto JavaSE Maven, gestionado por Springboot, no requiere tener maven instalado dado que contiene MavenWrapper en un directorio oculto.
 	
+Proyecto 05 - springboot-tomcat
+	Es un proyecto de Springboot con Apache Tomcat embebido, contiene maven wrapper y tiene un ejemplo de Rest con Spring.
+
+	
 
