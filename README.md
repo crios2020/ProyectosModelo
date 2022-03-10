@@ -8,3 +8,6 @@ Proyecto 01 - Hola Mundo JavaSE
 
 Proyecto 02 - Hola Mundo Swing
 	Este proyecto es una forma de iniciar un formulario Swing Básico
+
+Proyecto 03 - Hola Mundo Maven
+	Proyecto vació de JavaSE Maven, contiene declaración de clase principal en el archivo .JAR requiere tener Maven instalado
