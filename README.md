@@ -13,6 +13,6 @@ Proyecto 03 - Hola Mundo Maven
 	Proyecto vació de JavaSE Maven, contiene declaración de clase principal en el archivo .JAR requiere tener Maven instalado.
 	
 Proyecto 04 - maven-springboot
-	Es un proyecto JavaSE Maven, gesionado por Springboot, no requiere tener maven instalado dado que contiene MavenWrapper en un directorio oculto.
+	Es un proyecto JavaSE Maven, gestionado por Springboot, no requiere tener maven instalado dado que contiene MavenWrapper en un directorio oculto.
 	
 
