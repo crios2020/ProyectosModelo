@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Hola</title>
+		<link th:href = "@{/css/style.css}" rel="stylesheet"/>
+		<script type="text/javascript" th:src = "@{/js/main.js}"></script>
+	</head>
+	<body>
+		<h1>Hola Mundo!</h1>
+		<p th:text="'Hello, '+${nombre} + '!'"></p> 
+		<button type="button" th:onclick="demo()">Show Alert</button>
+
+		<script>
+			// alert("Hola JS");
+		</script>
+
+	</body>
+</html>
