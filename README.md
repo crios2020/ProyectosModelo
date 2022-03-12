@@ -18,5 +18,12 @@ Proyecto 04 - maven-springboot
 Proyecto 05 - springboot-tomcat
 	Es un proyecto de Springboot con Apache Tomcat embebido, contiene maven wrapper y tiene un ejemplo de Rest con Spring.
 
+Proyecto 06 - springboot-servlets
+	Este proyecto integra Servlets a Springboot.
+	
+Proyecto 07 - springboot-thymeleaf
+	Este proyecto integra html js css a un proyecto web.
+
+	
 	
 
