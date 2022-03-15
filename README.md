@@ -24,6 +24,10 @@ Proyecto 06 - springboot-servlets
 Proyecto 07 - springboot-thymeleaf
 	Este proyecto integra html js css a un proyecto web.
 
+Proyecto 08 - springboot-jsp
+	Este proyecto integra JSP y JSTL a Springboot
+	
+
 	
 	
 
