@@ -10,4 +10,9 @@ public class GreetingController{
 	public String mensaje(){
 		return "mensaje";
 	}
+
+	@RequestMapping("/welcome")
+	public String welcome(){
+		return "welcome";
+	}
 }
