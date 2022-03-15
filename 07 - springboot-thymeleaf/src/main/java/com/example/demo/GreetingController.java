@@ -11,6 +11,11 @@ public class GreetingController{
 	@GetMapping("/main")
 	public String greeting(@RequestParam(name="nombre", required=false, defaultValue="World") String nombre, Model model){
 		model.addAttribute("nombre",nombre);
-		return"main";
+		return "main";
+	}
+
+	@GetMapping("/welcome")
+	public String welcome(){
+		return "welcome";
 	}
 }
