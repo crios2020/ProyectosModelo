@@ -1,5 +1,5 @@
 # ProyectosModelo
-Colección de plantillas de modelo de proyectos 
+Colección de plantillas de modelo de proyectos Springboot Java EE.
 Esto es ideal para cuando no sabes como iniciar un proyecto, o sentís que el IDE te genera demasiadas cosas innecesarias (archivos, comentarios dependencias).
 
 
