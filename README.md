@@ -27,6 +27,10 @@ Proyecto 07 - springboot-thymeleaf
 Proyecto 08 - springboot-jsp
 	Este proyecto integra JSP y JSTL a Springboot.
 	
+Proyecto 09 - VSCodeSQL
+	Este proyecto muestra como integrar un cliente SQL a VSCode.
+
+	
 
 	
 	
