@@ -25,10 +25,15 @@ Proyecto 07 - springboot-thymeleaf
 	Este proyecto integra html js css a un proyecto web.
 
 Proyecto 08 - springboot-jsp
-	Este proyecto integra JSP y JSTL a Springboot.
+	Este proyecto integra JSP y JSTL a Springboot, también se puede utilizar para HTML, CSS, JS.
 	
 Proyecto 09 - VSCodeSQL
-	Este proyecto muestra como integrar un cliente SQL a VSCode.
+	Este proyecto muestra como integrar un cliente SQL a VSCode, El plugin de lo puede utilizar con MySQL, MariaDB, Postgre y SQLite, 
+	Hay plugin para otras motores de BD.
+	
+Proyecto 10 - Ejemplo Proyecto Springboot JSP JDBC
+	Es un ejemplo de proyecto Springboot JSP JDBC incluye DAO básico e interface grafica web y css.
+	
 
 	
 
