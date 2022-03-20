@@ -18,6 +18,10 @@ public class MavenSpringbootApplication {
 			ejemplo desde linux sh mvnw spring-boot:run
 
 			importante spring-boot, no es el artifact-id de este proyecto, es el plugin que inicia este proyecto
+
+			En algunas versiones de windows, fue necesario configurar las variables de entorno JAVA_HOME y JRE_HOME
+			https://www.tecnicomo.com/windows/como-configurar-las-variables-de-entorno-java_home-y-jre_home-en-windows-10/
+
 		*/
 	}
 

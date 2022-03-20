@@ -2,7 +2,6 @@ package com.example.springboottomcat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
 public class SpringbootTomcatApplication {
@@ -26,6 +25,9 @@ public class SpringbootTomcatApplication {
 			Ctrol - C en la terminal para detener el server
 
 			La Clase Hola contiene un ejemplo de una API Rest
+
+			En algunas versiones de windows, fue necesario configurar las variables de entorno JAVA_HOME y JRE_HOME
+			https://www.tecnicomo.com/windows/como-configurar-las-variables-de-entorno-java_home-y-jre_home-en-windows-10/
 
 		*/
 	}
