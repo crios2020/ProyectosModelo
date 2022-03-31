@@ -34,6 +34,10 @@ Proyecto 09 - VSCodeSQL
 Proyecto 10 - Ejemplo Proyecto Springboot JSP JDBC
 	Es un ejemplo de proyecto Springboot JSP JDBC incluye DAO básico e interface grafica web y css.
 	
+Proyecto 11 - Ejemplo Proyecto Springboot Api Rest
+	Este proyecto contiene una api rest realizada con Spring Services, el acceso a datos es SpringData.
+	
+	
 
 	
 

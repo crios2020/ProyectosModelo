@@ -18,7 +18,24 @@ public class CursoService {
         cursoRepository.save(curso);
     }
 
+    public void delete(Integer id){
+        cursoRepository.delete(cursoRepository.findById(id).get());
+    }
+
     public List<Curso>getAll(){
         return (List<Curso>)cursoRepository.findAll();
     }
+
+    public Curso getById(Integer id){
+        return cursoRepository.findById(id).get();
+    }
+
+    public List<Curso>getByTitulo(String titulo){
+        return cursoRepository.findByTitulo(titulo);
+    }
+
+    public List<Curso>getLikeTitulo(String titulo){
+        return cursoRepository.findByTituloContainingIgnoreCase(titulo);
+    }
+
 }
