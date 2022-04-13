@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -20,7 +22,12 @@ public class Alumno implements Serializable,Comparable<Alumno>{
     private String nombre;
     private String apellido;
     private Integer edad;
+    @Column(name = "idCurso", nullable = false)
     private Integer idCurso;
+    /*
+        Esta campo referencia a id_curso, no a idCurso, no hace caso a la notation @Column que es un estandar den JPA
+        los campos con camel case no funcionan!!!!!!, modifique el script de la BD.
+    */
 
     public Alumno() {
     }
@@ -91,6 +98,5 @@ public class Alumno implements Serializable,Comparable<Alumno>{
     public void setIdCurso(Integer idCurso) {
         this.idCurso = idCurso;
     }
-
 
 }

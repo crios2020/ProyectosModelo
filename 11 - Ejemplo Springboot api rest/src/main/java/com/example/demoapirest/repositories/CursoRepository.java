@@ -19,11 +19,11 @@ public interface CursoRepository extends CrudRepository<Curso, Integer>{
 
     /*
 
-    Diferencias entre extender desde CrudRepository o JpaRepository
-    https://www.geeksforgeeks.org/spring-boot-difference-between-crudrepository-and-jparepository/
+        Diferencias entre extender desde CrudRepository o JpaRepository
+        https://www.geeksforgeeks.org/spring-boot-difference-between-crudrepository-and-jparepository/
 
-    formas de escribir las queries en el nombre del método
-    https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+        formas de escribir las queries en el nombre del método
+        https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
 
     */
 

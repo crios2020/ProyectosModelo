@@ -15,12 +15,12 @@ create table alumnos(
     nombre varchar(20) not null,
     apellido varchar(20) not null,
     edad int not null,
-    idCurso int not null
+    id_curso int not null
 );
 
 alter table alumnos
     add constraint FK_Alumnos_Cursos
-    foreign key(idCurso)
+    foreign key(id_curso)
     references cursos(id);
 
 select version();

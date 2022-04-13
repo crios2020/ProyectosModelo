@@ -52,7 +52,7 @@ public class CursoController {
     public int guardar( @RequestParam("titulo") String titulo, @RequestParam("profesor") String profesor, 
                         @RequestParam("dia") String dia, @RequestParam("turno") String turno){
 
-        //Los parametros son obligatorios, si no se ingresan paramtros, devuelve error 404                    
+        //Los parametros son obligatorios, si no se ingresan parámetros, devuelve error 404                    
         Curso curso=new Curso(
             titulo,
             profesor,
