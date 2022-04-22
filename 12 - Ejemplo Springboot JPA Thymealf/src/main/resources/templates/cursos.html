@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href = "@{/css/style.css}" rel="stylesheet"/>
+    <title>Cursos</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="/main"   >Inicio </a></li>
+        <li><a href="/cursos"  >Cursos </a></li>
+        <li><a href="/alumnos" >Alumnos</a></li>
+        <li>v0.99</li>
+    </ul>
+
+    <h1>Cursos!</h1>
+    
+    <form th:object="${curso}" th:action="@{/save}" method="post">
+        <table>
+            <tr><td>Titulo:     </td><td><input type="text" th:field="*{titulo}" required    minlength="3" maxlength="20" style="width: 200px;"/></td></tr>
+            <tr><td>Profesor:   </td><td><input type="text" th:field="*{profesor}" required    minlength="3" maxlength="20" style="width: 200px;"/></td></tr>
+            <tr>
+                <td>Dia:        </td>
+                <td>
+                    <select name="dia" th:value="*{dia}" style="width: 208px;">
+                        <option th:each="dia : ${dias}"
+                           th:value="${dia}"
+                           th:text="${dia}"/>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Turno: </td>
+                <td>
+                    <select name="turno" th:value="*{turno}" style="width: 208px;">
+                        <option th:each="turno : ${turnos}"
+                           th:value="${turno}"
+                           th:text="${turno}"/>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset"     value="Limpiar"   /></td>
+                <td><input type="submit"    value="Guardar"   /></td>
+            </tr>
+        </table>
+        
+    </form>
+
+    <div>
+        <table>
+            <tr><th>Id</th><th>Titulo</th><th>Profesor</th><th>Día</th><th>Turno</th></tr>
+            <tr th:each="curso : ${all}">
+                <td th:text="${curso.id}"></td>
+                <td th:text="${curso.titulo}"></td>
+                <td th:text="${curso.profesor}"></td>
+                <td th:text="${curso.dia}"></td>
+                <td th:text="${curso.turno}"></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

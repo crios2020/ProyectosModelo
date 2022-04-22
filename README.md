@@ -37,6 +37,11 @@ Proyecto 10 - Ejemplo Proyecto Springboot JSP JDBC
 Proyecto 11 - Ejemplo Proyecto Springboot Api Rest
 	Este proyecto contiene una api rest realizada con Spring Services, el acceso a datos es SpringData.
 	
+Proyecto 12 - Ejemplo Proyecto JPA Thymeleaf
+	Este proyecto contiene un DAO con JPA SpringData e Interface Gráfica Thymeleaf.
+
+	
+	
 	
 
 	
