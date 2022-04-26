@@ -47,13 +47,18 @@
                 <td><input type="submit"    value="Guardar"   /></td>
             </tr>
         </table>
-        
+        <div id='info'><label th:text="${mensajeInfo}"></label></div>
     </form>
 
     <div>
+        <form method="get">
+            Buscar Titulo:
+            <input type="text" name="buscarTitulo"/>
+            <input type="submit" value="Buscar" />
+        </form>
         <table>
             <tr><th>Id</th><th>Titulo</th><th>Profesor</th><th>Día</th><th>Turno</th></tr>
-            <tr th:each="curso : ${all}">
+            <tr th:each="curso : ${likeTitulo}">
                 <td th:text="${curso.id}"></td>
                 <td th:text="${curso.titulo}"></td>
                 <td th:text="${curso.profesor}"></td>

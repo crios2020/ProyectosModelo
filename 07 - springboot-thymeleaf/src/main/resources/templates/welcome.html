@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hola</title>
+	<link th:href = "@{/css/style.css}" rel="stylesheet"/>
+	<script type="text/javascript" th:src = "@{/js/main.js}"></script>
 </head>
 <body>
     <h1>Bienvenidos</h1>
+    <form>
+        <input type="text" th:value="${texto}"/>
+        <p th:text="${texto}"></p>
+    </form>
 </body>
 </html>
