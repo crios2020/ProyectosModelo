@@ -39,6 +39,10 @@ Proyecto 11 - Ejemplo Proyecto Springboot Api Rest
 	
 Proyecto 12 - Ejemplo Proyecto JPA Thymeleaf
 	Este proyecto contiene un DAO con JPA SpringData e Interface Gráfica Thymeleaf.
+	
+Proyecto 13 - Este proyecto muestra como consumir con react servicios Rest, se consumen los servicios del Proyecto 11
+
+
 
 	
 	

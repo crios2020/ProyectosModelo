@@ -8,6 +8,7 @@ import com.example.demoapirest.models.Curso;
 import com.example.demoapirest.services.CursoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,6 +28,9 @@ public class CursoController {
         return "Servicio Cursos Activo";
     }
 
+    //Habilito Servicios cors para poder ingresar desde otro dominio
+    //@CrossOrigin(origins = "*" )
+    @CrossOrigin(origins="http://127.0.0.1:5500")
     @GetMapping("/all")
     public List<Curso>getAll(){
         return cursoService.getAll();
