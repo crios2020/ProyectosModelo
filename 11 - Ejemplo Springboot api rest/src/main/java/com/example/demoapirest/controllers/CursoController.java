@@ -29,8 +29,8 @@ public class CursoController {
     }
 
     //Habilito Servicios cors para poder ingresar desde otro dominio
-    //@CrossOrigin(origins = "*" )
-    @CrossOrigin(origins="http://127.0.0.1:5500")
+    @CrossOrigin(origins = "*" )
+    //@CrossOrigin(origins="http://127.0.0.1:5500")
     @GetMapping("/all")
     public List<Curso>getAll(){
         return cursoService.getAll();

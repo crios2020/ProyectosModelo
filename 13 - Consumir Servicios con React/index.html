@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <!-- Ajax -->
@@ -24,10 +26,47 @@
         //solo imprime los objects
         fetch('http://localhost:8080/cursos/all')
             .then(response => response.json())
-            .then(data => document.getElementById("datos").innerHTML=data);
+            .then(data => document.getElementById("datos").innerHTML = data);
     </script>
 
-    
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Profesor</th>
+                <th>Día</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody id="tBody">
+        </tbody>
+    </table>
+
+    <script>
+        fetch('http://localhost:8080/cursos/all')
+            .then(response => response.json())
+            .then(data => {
+                var datosJson = JSON.parse(JSON.stringify(data))
+                //console.log(datosJson.length);
+                //console.log(datosJson)
+                var tableBody=''
+                for (i = 0; i < datosJson.length; i++){
+                    tableBody+=
+                        '<tr>' + 
+                            '<td align="center" style="dislay: none;">' + datosJson[i].id + '</td>'+
+                            '<td align="center" style="dislay: none;">' + datosJson[i].titulo + '</td>'+
+                            '<td align="center" style="dislay: none;">' + datosJson[i].profesor + '</td>'+
+                            '<td align="center" style="dislay: none;">' + datosJson[i].dia + '</td>'+
+                            '<td align="center" style="dislay: none;">' + datosJson[i].turno + '</td>'+
+                        '</tr>';
+                    console.log(tableBody);
+                    document.getElementById('tBody').innerHTML=tableBody;
+                }
+            })
+
+    </script>
 
 </body>
+
 </html>
